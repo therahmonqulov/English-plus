@@ -1073,15 +1073,16 @@ header {
 .contact-section {
     font-family: Gilroy-light;
     background: #254279;
-    border-radius: 20px 20px 0 0;
+    border-radius: 106px 0px 106px 0px;
     padding: 40px 100px;
     margin-top: 60px;
     color: white;
 }
 
 .contact-header {
+    font-weight: 400;
     text-align: center;
-    font-size: 2rem;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
@@ -1093,13 +1094,14 @@ header {
 }
 
 .contact-item h3 {
-    font-size: 1.1rem;
+    font-size: 20px;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .contact-item p {
-    font-size: 0.9rem;
+    margin-top: 12px;
+    font-size: 16px;
     line-height: 1.6;
     opacity: 0.9;
 }
@@ -1136,9 +1138,7 @@ header {
 
 .company-info {
     flex: 1;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    opacity: 0.9;
+    font-size: 14px;
 }
 
 @media (max-width: 968px) {
