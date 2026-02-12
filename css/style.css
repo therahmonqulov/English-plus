@@ -1071,9 +1071,10 @@ header {
 
 /* Contact Section */
 .contact-section {
-    background: linear-gradient(135deg, #2c3e50 0%, #3d5a80 100%);
+    font-family: Gilroy-light;
+    background: #254279;
     border-radius: 20px 20px 0 0;
-    padding: 40px;
+    padding: 40px 100px;
     margin-top: 60px;
     color: white;
 }
@@ -1118,17 +1119,19 @@ header {
 }
 
 .logo-placeholder {
-    width: 100px;
-    height: 100px;
-    background: white;
+    width: 130px;
+    height: auto;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
     font-size: 0.8rem;
     color: #3d5a80;
     text-align: center;
     padding: 10px;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: auto;
 }
 
 .company-info {
