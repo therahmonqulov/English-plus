@@ -1111,7 +1111,6 @@ header {
     align-items: flex-start;
     gap: 30px;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .logo-section {
@@ -1137,7 +1136,11 @@ header {
 }
 
 .company-info {
-    flex: 1;
+    width: 100%;
+}
+
+.company-info p{
+    margin-top: 50px;
     font-size: 14px;
 }
 
