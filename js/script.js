@@ -116,3 +116,5 @@ function toggleAnswer(element) {
     answer.classList.toggle('active');
     btn.textContent = answer.classList.contains('active') ? '-' : '+';
 }
+
+// reviews
