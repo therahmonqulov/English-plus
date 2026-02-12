@@ -984,8 +984,17 @@ header {
 
 /* faq */
 .faq {
+    position: relative;
     margin-top: 104px;
     font-family: Gilroy-light;
+}
+.faq::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    height: 238px;
+    border-radius: 50%;
+    border: 3px solid #8ED7FA;
 }
 .faq h1 {
     font-weight: 500;
@@ -1142,6 +1151,13 @@ header {
 .company-info p{
     font-weight: 300;
     font-size: 16px;
+}
+
+.faq_corner img {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: -90px;
 }
 
 @media (max-width: 968px) {
