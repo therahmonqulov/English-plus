@@ -989,10 +989,13 @@ header {
     font-family: Gilroy-light;
 }
 .faq::before {
+    z-index: -1;
     content: '';
     position: absolute;
-    top: 0px;
-    height: 238px;
+    top: 195px;
+    left: 40px;
+    width: 440px;
+    height: 410px;
     border-radius: 50%;
     border: 3px solid #8ED7FA;
 }
@@ -1012,7 +1015,7 @@ header {
 
 .faq-section {
     border-radius: 20px;
-    padding: 30px;
+    padding: 0px 30px;
     position: relative;
 }
 
