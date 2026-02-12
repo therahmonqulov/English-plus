@@ -738,6 +738,7 @@ header {
 }
 
 @media (max-width: 1100px) {
+
     .review-wrapper:nth-child(2),
     .review-wrapper:nth-child(3) {
         margin-top: 0;
@@ -852,7 +853,7 @@ header {
 /* News Section */
 .news-section {
     font-family: Gilroy-light;
-    padding: 60px 0 80px;
+    padding: 60px 0px 0px 0px;
 }
 
 .news-grid {
@@ -868,13 +869,13 @@ header {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .news-image {
@@ -953,11 +954,11 @@ header {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .partner-decoration {
         display: none;
     }
-    
+
     .news-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -967,16 +968,206 @@ header {
     .section-title {
         font-size: 28px;
     }
-    
+
     .news-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .partners-section {
         padding: 40px 0;
     }
-    
+
     .news-section {
         padding: 40px 0;
+    }
+}
+
+/* faq */
+.faq {
+    margin-top: 104px;
+    font-family: Gilroy-light;
+}
+.faq h1 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 28px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.faq-section {
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.faq-section h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.teacher-quality-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question span {
+    color: #000;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.toggle-btn {
+    width: 30px;
+    height: 30px;
+    background: #3d5a80;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    color: #000;
+    line-height: 1.6;
+    background: #fff;
+    margin-top: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #3d5a80 100%);
+    border-radius: 20px 20px 0 0;
+    padding: 40px;
+    margin-top: 60px;
+    color: white;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.contact-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #3d5a80;
+    text-align: center;
+    padding: 10px;
+}
+
+.company-info {
+    flex: 1;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+@media (max-width: 968px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-quality-section {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-section {
+        padding: 20px;
+    }
+
+    .contact-section {
+        padding: 30px 20px;
     }
 }
