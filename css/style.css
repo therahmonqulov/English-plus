@@ -986,6 +986,10 @@ header {
     background: none;
 }
 
+.carousel-btn:hover {
+    background-color: #fff;
+}
+
 /* Responsive uchun o'zgartirish (oldingi media query'larga qo'shimcha) */
 @media (max-width: 992px) {
     .news-grid {
