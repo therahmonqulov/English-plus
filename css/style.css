@@ -1131,7 +1131,6 @@ header {
 }
 
 .logo-placeholder img {
-    width: 100%;
     height: auto;
 }
 
@@ -1140,7 +1139,6 @@ header {
 }
 
 .company-info p{
-    margin-top: 50px;
     font-size: 14px;
 }
 
