@@ -533,6 +533,15 @@ header {
 
 /* Responsive */
 @media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 80px !important;
+        height: auto;
+    }
+
     .header_link {
         display: none;
     }
