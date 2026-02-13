@@ -7,19 +7,19 @@
 @font-face {
     font-family: Gilroy-light;
     src: url(../astess/fonts/Gilroy-Light.woff2);
-    font-display: optional;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Cygre;
     src: url(../astess/fonts/Cygre-SemiBold.woff2);
-    font-display: optional;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Cygre-bold;
     src: url(../astess/fonts/Gilroy-bold.woff2);
-    font-display: optional;
+    font-display: swap;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1700px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -67,6 +67,38 @@ header {
     background-color: #249DD8;
 }
 
+.mob_header {
+    display: none;
+}
+
+/* hamburger button */
+.menu_btn {
+    display: none;
+}
+
+.line {
+    stroke: #fff;
+    stroke-width: 6;
+    stroke-linecap: round;
+    transition: 0.4s;
+}
+
+/* animation to X */
+.menu_btn.active .top {
+    transform: rotate(45deg) translateY(15px);
+    transform-origin: center;
+}
+
+.menu_btn.active .middle {
+    opacity: 0;
+}
+
+.menu_btn.active .bottom {
+    transform: rotate(-45deg) translateY(-15px);
+    transform-origin: center;
+}
+
+/* first */
 .first {
     padding: 30px 90px 0px 120px;
     display: flex;
@@ -546,6 +578,62 @@ header {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .menu_btn {
+        background: #2ea3d4;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .mob_header {
+        display: block;
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #c3e2f7;
+        padding: 40px 20px;
+        transition: 0.4s;
+        z-index: 998;
+    }
+
+    .mob_header.active {
+        top: 60px;
+        right: 0;
+    }
+
+    .mob_header ul {
+        list-style: none;
+    }
+
+    .mob_header ul li {
+        margin-bottom: 20px;
+    }
+
+    .mob_header ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .mob_header a {
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: #000;
+        font-family: Gilroy-light;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
     .courses-grid-img-mob {
         display: block;
     }

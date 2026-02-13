@@ -1,3 +1,13 @@
+// menu
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobHeader");
+
+btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    menu.classList.toggle("active");
+});
+
+// 
 const slider = document.getElementById('newsSlider');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
