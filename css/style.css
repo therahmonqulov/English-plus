@@ -549,6 +549,21 @@ header {
         background-color: #ebf4ff;
     }
 
+    .first p br {
+        display: none !important;
+    }
+
+    .first_text-p1 {
+        line-height: 114%;
+        font-size: clamp(0px, 9vw, 35px);
+        margin-bottom: 24px;
+    }
+
+    .first_text-p2 {
+        margin-bottom: 50px;
+        font-size: clamp(0px, 5vw, 19px);
+    }
+
     .first_img_mob img {
         display: block;
         width: 100%;
@@ -593,6 +608,7 @@ header {
     }
 
     .about {
+        margin-top: 60px;
         padding: 24px 6px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
