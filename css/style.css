@@ -550,6 +550,10 @@ header {
         display: block;
     }
 
+    .courses-grid-img-mob img {
+        width: 100%;
+    }
+
     header {
         padding: 10px;
     }
