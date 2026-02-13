@@ -7,19 +7,19 @@
 @font-face {
     font-family: Gilroy-light;
     src: url(../astess/fonts/Gilroy-Light.woff2);
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: Cygre;
     src: url(../astess/fonts/Cygre-SemiBold.woff2);
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: Cygre-bold;
     src: url(../astess/fonts/Gilroy-bold.woff2);
-    font-display: swap;
+    font-display: optional;
 }
 
 body {
