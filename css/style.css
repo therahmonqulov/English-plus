@@ -1262,6 +1262,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    section::before {
+        display: none;
+    }
+
     .news-carousel-controls {
         margin-top: 20px;
     }
