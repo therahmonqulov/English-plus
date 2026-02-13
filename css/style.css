@@ -140,6 +140,10 @@ header {
     position: absolute;
 }
 
+.about_circus_mob img {
+    display: none;
+}
+
 .about_title {
     font-weight: 400;
     text-align: center;
@@ -574,8 +578,16 @@ header {
     }
 
     .about {
+        padding: 24px 6px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
+    }
+
+    .about_circus_mob img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
     }
 
     .about_circus img {
