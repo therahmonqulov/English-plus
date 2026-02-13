@@ -1016,15 +1016,35 @@ header {
     }
 
     .teacher {
-        overflow: hidden;
         width: 100%;
+    }
+
+    .teacher_avatar {
+        width: 120px;
+        top: -100px;
+        height: auto;
+        left: 30%;
+    }
+
+    .teacher_name {
+        text-align: center;
+        margin-bottom: clamp(0px, 6vw, 28px);
     }
 
     .teacher_cards {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
     }
+
+    .teacher_text {
+        margin-bottom: 10px;
+        font-size: clamp(0px, 5vw, 12px);
+    }
+
+    .reviews-container {
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
 }
 
 .section-title {
