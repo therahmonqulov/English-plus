@@ -359,6 +359,10 @@ header {
     width: 100%;
 }
 
+.team-logo_mob {
+    display: none;
+}
+
 .team-intro h3 {
     font-weight: 500;
     font-size: 12px;
@@ -537,10 +541,6 @@ header {
         display: none;
     }
 
-    .header-section {
-        grid-template-columns: 1fr;
-    }
-
     .first {
         display: grid;
         padding: 30px 10px 0px 10px;
@@ -573,8 +573,23 @@ header {
         display: none;
     }
 
+    .second {
+        padding: 0px 10px;
+    }
+
     .second::before {
         display: none;
+    }
+
+    .second_box {
+        padding: 14px;
+        width: 100%;
+        height: auto;
+    }
+
+    .second_box p {
+        font-size: clamp(0px, 5vw, 12px);
+        line-height: 140%;
     }
 
     .about {
@@ -640,18 +655,52 @@ header {
         right: 16px;
     }
 
+    .header-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .history-img img {
+        display: none;
+    }
+
+    .epilose_second {
+        display: none;
+    }
+
     .core_desc {
         text-align: left;
     }
 
     .team-intro {
+        display: grid;
+        padding: 12px;
         width: 100%;
+        height: auto;
+    }
+
+    .team-intro p {
+        font-size: clamp(0px, 5vw, 12px);
+    }
+
+    .team-logo {
+        display: none;
+    }
+
+    .team-logo_mob {
+        display: block;
     }
 
     .team-member {
+        display: grid;
+        padding: 0px 10px;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+    }
+
+    .courses-section_img {
+        display: none;
     }
 
     .bg-english,
@@ -864,8 +913,20 @@ header {
     }
 
     .circle-1 {
-        width: 300px;
-        height: 300px;
+        display: none;
+        width: 30px;
+        height: auto;
+    }
+
+    .teacher {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .teacher_cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -1353,6 +1414,14 @@ header {
 }
 
 @media (max-width: 640px) {
+    .faq::before {
+        display: none;
+    }
+
+    .faq_corner {
+        display: none;
+    }
+
     h1 {
         font-size: 1.8rem;
     }
