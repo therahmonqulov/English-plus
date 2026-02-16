@@ -190,13 +190,25 @@ header {
     margin-bottom: 50px;
 }
 
-.box {
+.box_background {
     z-index: 2;
+    background-image: url(../astess/img/box-shadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 440px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
     background: #e5e5e5;
     color: black;
     padding: 12px 24px;
     border-radius: 12px;
     width: 420px;
+    height: auto;
     border: 2px solid #35b6c6;
 }
 
@@ -234,6 +246,19 @@ header {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+.card_shadow {
+    z-index: 2;
+    background-image: url(../astess/img/card_shadow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 255px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -736,6 +761,10 @@ header {
         border-bottom-right-radius: 20px;
     }
 
+    .about_title {
+        margin-bottom: 0px;
+    }
+
     .about_circus_mob img {
         position: absolute;
         top: 0;
@@ -754,9 +783,22 @@ header {
         margin-bottom: 50px;
     }
 
-    .box {
-        width: 100%;
+    .box_background {
         z-index: 2;
+        background-image: url(../astess/img/box_background_mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 105%;
+        height: 94%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .box {
+        width: 325px;
         background: #e5e5e5;
         color: black;
         padding: 12px 24px;
