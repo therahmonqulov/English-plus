@@ -576,6 +576,10 @@ header {
     display: none;
 }
 
+.wrapper-center {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .menu_btn {
