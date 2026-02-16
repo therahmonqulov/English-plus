@@ -1,6 +1,6 @@
 // menu
 const btn = document.getElementById("menuBtn");
-const menu = document.getElementById("mobHeader");ad
+const menu = document.getElementById("mobHeader");
 btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     menu.classList.toggle("active");
