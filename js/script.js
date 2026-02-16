@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
     }
 });
 
-// 
+// card carusel
 const slider = document.getElementById('newsSlider');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
