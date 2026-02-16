@@ -5,6 +5,15 @@ const menu = document.getElementById("mobHeader");
 btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     menu.classList.toggle("active");
+    
+    // Body scroll ni bloklash yoki yoqish
+    if (menu.classList.contains("active")) {
+        // Menyu aktiv bo'lsa scroll ni bloklash
+        document.body.style.overflow = "hidden";
+    } else {
+        // Menyu yopiq bo'lsa scroll ni qayta yoqish
+        document.body.style.overflow = "";
+    }
 });
 
 // 
