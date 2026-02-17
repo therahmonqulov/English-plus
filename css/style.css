@@ -192,7 +192,7 @@ header {
 
 .box_background {
     z-index: 2;
-    background-image: url(../astess/img/box-shadow.png);
+    background-image: url(../astess/img/box-shadow.avif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 440px;
@@ -250,7 +250,7 @@ header {
 
 .card_shadow {
     z-index: 2;
-    background-image: url(../astess/img/card_shadow.png);
+    background-image: url(../astess/img/card_shadow.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -785,7 +785,7 @@ header {
 
     .box_background {
         z-index: 2;
-        background-image: url(../astess/img/box_background_mob.png);
+        background-image: url(../astess/img/box_background_mob.avif);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
